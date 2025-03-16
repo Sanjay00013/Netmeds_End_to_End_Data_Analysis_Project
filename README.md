@@ -1,46 +1,121 @@
-# Netmeds-End-to-End-Data-Analysis-Project
-Overview
+# 💊 Pharmacy Data Analytics & Drug Classification Projects
 
-This project focuses on extracting, analyzing, and modeling pharmaceutical data to generate actionable insights. It integrates web scraping, data visualization, SQL analysis, and machine learning to provide a data-driven perspective on drug classification, pricing, and market trends.
+## 📌 This repository contains two interconnected pharmaceutical data projects:
+- ✅ **Drug Classification Prediction Model using RXList data**
+- ✅ **Netmeds Web Scraping & Analytics for medicine information**
 
-Table of Contents
+---
 
-Project Workflow - Overview of objectives and methodologies.
+## 🏥 1. Drug Classification Prediction
 
-Rx List Web Scraping & Model Building for Predicting Drug Class - Extracting drug-related data from RxList and developing a classification model.
+### 🔍 Overview
+This project builds a machine learning model to predict drug classifications based on brand and generic names. The data was scraped from RXList, processed, and used to train a **Random Forest Classifier model achieving 86.91% accuracy**.
 
-Netmeds Web Scraping - Extracting product details, prices, and availability from Netmeds.
+### ✨ Features
+- 🏷 **Web scraping** of pharmaceutical drug information from RXList
+- 🔄 **Data preprocessing and cleaning**
+- 📊 **TF-IDF vectorization** for text feature extraction
+- 🤖 **Random Forest Classifier** for drug class prediction
+- 💾 **Model serialization** for future use
 
-Excel Dashboard & Profitability Case Study - Creating an interactive dashboard to visualize Netmeds data and identifying strategies to increase profit.
+### 🛠 Technologies
+- 🐍 **Python**
+- 🌐 **BeautifulSoup & Requests** (web scraping)
+- 📈 **scikit-learn** (machine learning)
+- 🗂 **joblib** (model serialization)
 
-Netmeds SQL Analysis & Visualization - Performing SQL-based analysis and generating insights through queries and visualizations.
+### 🔬 Process
+1. 📥 **Data Collection:** Scraping RXList website alphabetically (A-Z) for drug information
+2. 🔍 **Data Extraction:** Gathering brand names, generic names, and drug classifications
+3. 🛠 **Preprocessing:** Combining text features and vectorizing with TF-IDF
+4. 🎯 **Model Training:** Implementing and training a Random Forest Classifier (80/20 train/test split)
+5. 📊 **Evaluation:** Achieving **86.91%** classification accuracy
+6. 💾 **Model Persistence:** Saving the model, vectorizer, and encoder for future predictions
 
-Netmeds EDA & Price Prediction Model - Conducting exploratory data analysis and developing a predictive model for estimating drug prices.
-
-Technologies Used
-
-Python (BeautifulSoup, Scrapy, Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn)
-
-SQL (PostgreSQL/MySQL for querying and analysis)
-
-Excel (Dashboard creation and visualization)
-
-Machine Learning (Classification and regression models)
+### 🖼 Screenshots
+![image](https://github.com/user-attachments/assets/fc9227ec-a2b5-4ffa-9a22-340b0d0f30f3)
 
 
+---
 
-Results & Insights
+## 💻 2. Netmeds Web Scraping & Analysis
 
-Extracted and structured pharmaceutical data from RxList and Netmeds.
+### 🔍 Overview
+This project involved extracting extensive medicine data from Netmeds online pharmacy, with **optimization techniques reducing execution time from 15+ hours to just a few hours**.
 
-Built a machine learning model to classify drugs based on their attributes.
+### ✨ Features
+- 🏷 **Comprehensive medicine data extraction**
+- 🚀 **Performance optimization through multithreading**
+- 🔄 **Error handling and logging system**
+- 💾 **Checkpoint system for data preservation**
+- 📊 **SQL analysis and data visualization**
 
-Created an Excel dashboard to visualize trends and identify profit opportunities.
+### 🛠 Technologies
+- 🐍 **Python**
+- 🌐 **Requests & BeautifulSoup** (web scraping)
+- ⚡ **ThreadPoolExecutor** (parallel processing)
+- 📂 **JSON** (data storage)
+- 📊 **SQL** (data analysis)
+- 📑 **Excel** (interactive dashboard creation)
 
-Performed SQL analysis to uncover valuable insights from Netmeds data.
+### 🔬 Process
+1. 🔍 **Category Discovery:** Extracting all medicine category links
+2. 🔗 **Medicine Link Collection:** Gathering individual medicine URLs from each category
+3. 📋 **Detailed Data Extraction:** Collecting metadata including:
+   - 💊 **Tablet names**
+   - 📜 **Prescription requirements (Rx status)**
+   - 💰 **Pricing and discounts**
+   - 🌍 **Country of origin**
+   - 🏭 **Manufacturer information**
+   - 🔬 **Detailed tablet information (dosage, composition)**
 
-Developed a price prediction model to estimate drug prices effectively.
+### 🚀 Performance Optimization
+- ⚡ **Implementing multithreading** with thread locks
+- 🛡 **Adding robust exception handling**
+- 📝 **Creating a comprehensive logging system**
+- 💾 **Implementing periodic data checkpoints**
+- 🔄 **Utilizing asynchronous processing**
 
-Contact
+### 📊 Results
+- ✅ Successfully scraped data for **27,000+ medicines**
+- 🚀 Reduced execution time by **more than 80%** through optimization
+- 📊 Created **interactive Excel dashboards** using pivot tables
+- 🔎 Performed **SQL analysis with visualization**
 
-For any questions or collaborations, please reach out at [sanjaydalawai108@gmail.com].
+### 🖼 Screenshots
+ ![image](https://github.com/user-attachments/assets/f7fa2fc4-a097-4918-8a6d-c8c43e8a98f1)
+
+📸 **Figure 1:** Interactive dashboard showing medicine pricing analytics  
+![image](https://github.com/user-attachments/assets/aa970b68-1eff-46ea-b2ba-fca21c25e574)
+
+📸 **Figure 2:** SQL query results with visualization charts  
+![image](https://github.com/user-attachments/assets/ff56b7c6-9cc6-4074-a610-60ec6e06707b)
+![image](https://github.com/user-attachments/assets/64363c2e-e757-4623-9724-23476bf80931)
+
+---
+
+
+
+
+---
+
+## 🔮 Future Work
+🏷 Expanding the model to include additional drug features
+
+🌐 Implementing a web interface for drug classification predictions
+
+📈 Enhancing the scraping system to track price changes over time
+
+🏥 Creating a unified database of pharmaceutical information
+
+🚀 Improving the model performance so that it can be implemented in real time
+
+---
+
+## 📩 Contact Information
+### 🤝 Connect With Me
+📧 **Email:** sanjaydalawai108@gmail.com
+🔗 **LinkedIn:** https://www.linkedin.com/in/sanjay-dalawai-460a20216/
+
+Feel free to reach out for **collaborations, questions, or feedback** on these projects! 🚀
+
