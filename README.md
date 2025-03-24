@@ -54,7 +54,6 @@ This project involved extracting extensive medicine data from Netmeds online pha
 - 🐍 **Python**
 - 🌐 **Requests & BeautifulSoup** (web scraping)
 - ⚡ **ThreadPoolExecutor** (parallel processing)
-- 📂 **JSON** (data storage)
 - 📊 **SQL** (data analysis)
 - 📑 **Excel** (interactive dashboard creation)
 
@@ -78,6 +77,7 @@ This project involved extracting extensive medicine data from Netmeds online pha
 
 ### 📊 Results
 - ✅ Successfully scraped data for **27,000+ medicines**
+- 🤖 Successfully built model for predicting medicine prices
 - 🚀 Reduced execution time by **more than 80%** through optimization
 - 📊 Created **interactive Excel dashboards** using pivot tables
 - 🔎 Performed **SQL analysis with visualization**
